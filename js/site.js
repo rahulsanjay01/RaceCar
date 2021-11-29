@@ -1,5 +1,5 @@
 //Getting the input from the user
-function getValue(){
+function getValues(){
 
     //Ensuring that the alert is invisible 
     document.getElementById("alert").classList.add("invisible");
