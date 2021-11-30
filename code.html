@@ -114,9 +114,23 @@ function displayMessage(returnObj){
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The code is structured in one function.</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a function that displays an alert with a message of "Hello World"</p>
+                    <h4>Description</h4>
+                    <p>The code can be broken down into three main functions:</p>
+                    
+                    <h5>1.) getValues()</h5>
+                    <p>
+                        The first step is to create variables for both fizzValue and buzzValue, this gives the input a static identifier that can be utilized. Giving the user's input a static identifier assists us in adding JavaScript functionality. The second step serves to verify that the input is interpreted as integers and not as strings.
+                    </p>
+                    <br>
+                    <h5>2.) checkForPalindrome()</h5>
+                    <p>
+                        The integers are used as parameters in the fizzBuzz function. The variable fizzBuzzArray holds the returned array. After the input is evaluated by the fizzBuzz function, the for-loop tests three separate conditions using if-statements. When the number is divisible by both the fizzValue and the buzzValue, "FizzBuzz" is displayed. If the number is only divisible by the fizzValue, "Fizz" is displayed. If the number is only divisible by the buzzValue, then "Buzz" is displayed. The else-statement will simply display the number in the table if the number is not divisible by the fizzValue nor the buzzValue. 
+                    </p>
+                    <br>
+                    <h5>3.) displayMessage()</h5>
+                    <p>
+                        In this section of the code, I have implemented the functionality that allows us to render and display the data to the user. I have created a function named displayValues, which takes in the array variable with numbers from the range of 1 to 100. The user's input will accordingly determine which specific numbers will be substituted with FizzBuzz, Fizz, and Buzzz values. The tableBody variable is set equal to the results element. I assigned the template to the variable templateRow. Afterwards, I have set the inner HTML of our table to an empty string. Setting the inner HTML to an empty string will prevent the tables from stacking if the view button is clicked more than once. The table is cleared each time the view button is clicked. The for-loop that has been implemented here improves the readability of the table by spreading the numbers across five separate rows. It is designed to run the length of the array and the loop increments in steps of five to display five values across each table row.
+                    </p>
                 </div>
             </div>
          </div>
