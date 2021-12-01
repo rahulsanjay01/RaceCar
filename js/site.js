@@ -26,13 +26,14 @@ function checkForPalindrome(userString){
 
     let revString = [];
     let returnObj = {};
+    let blankString = "";
 
     for (let index = userString.length - 1; index >= 0; index--) {
         revString += userString[index];
     }
 
     //Checking if usterString = revString
-    if (revString == userString) {
+    if (revString == userString & revString != blankString) {
         returnObj.msg = "Fantastic! You have entered a palindrome"
     }
     else{
