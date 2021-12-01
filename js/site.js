@@ -36,7 +36,7 @@ function checkForPalindrome(userString){
         returnObj.msg = "Fantastic! You have entered a palindrome"
     }
     else{
-        returnObj.msg = "You did not enter a palindrome! Try again"
+        returnObj.msg = "You did not enter a palindrome! Please try again"
     }
 
     returnObj.reversed = revString;
@@ -48,7 +48,7 @@ function checkForPalindrome(userString){
 function displayMessage(returnObj){
 
     document.getElementById("alertHeader").innerHTML = returnObj.msg;
-    document.getElementById("msg").innerHTML = `Your reversed word/ phrase is: ${returnObj.reversed}`;
+    document.getElementById("msg").innerHTML = `Your reversed word or phrase is: ${returnObj.reversed}`;
     document.getElementById("alert").classList.remove("invisible");
 
 }
