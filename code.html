@@ -120,12 +120,12 @@ function displayMessage(returnObj){
                     
                     <h5>1.) getValues()</h5>
                     <p>
-                        The first step is to create variables for both fizzValue and buzzValue, this gives the input a static identifier that can be utilized. Giving the user's input a static identifier assists us in adding JavaScript functionality. The second step serves to verify that the input is interpreted as integers and not as strings.
+                        The Javascript code of this application begins with the getValue function. The very first step is to ensure that the results element is not visible. Making the results element invisible is done by adding the invisible class. Afterwards, the user's input is stored in a variable. This variable is checked to confirm that a value was entered. If the user has not entered a value before pressing the submit button, the user will get alerted to try again. 
                     </p>
                     <br>
                     <h5>2.) checkForPalindrome()</h5>
                     <p>
-                        The integers are used as parameters in the fizzBuzz function. The variable fizzBuzzArray holds the returned array. After the input is evaluated by the fizzBuzz function, the for-loop tests three separate conditions using if-statements. When the number is divisible by both the fizzValue and the buzzValue, "FizzBuzz" is displayed. If the number is only divisible by the fizzValue, "Fizz" is displayed. If the number is only divisible by the buzzValue, then "Buzz" is displayed. The else-statement will simply display the number in the table if the number is not divisible by the fizzValue nor the buzzValue. 
+                        A new variable named returnObject is set equal to the palindromeCheck function in which I used userInput as a parameter. After the palindromeCheck function returns a value, returnObject is utilized as a parameter for the displayResults function.
                     </p>
                     <br>
                     <h5>3.) displayMessage()</h5>
