@@ -7,11 +7,16 @@ function getValues(){
     //Getting the user string 
     let userString = document.getElementById("userString").value;
 
+    if (userString.length > 2) {
     //Test for a palindrome
     let returnObj = checkForPalindrome(userString);
 
     //Displaying the result to the user
     displayMessage(returnObj);
+    }
+    else {
+    alert("You must enter three or more characters!");
+    }
 }
 
 //Test if the string is a palindrome

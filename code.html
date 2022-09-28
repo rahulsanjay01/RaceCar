@@ -65,11 +65,16 @@ function getValues(){
     //Getting the user string 
     let userString = document.getElementById("userString").value;
 
+    if (userString.length > 2) {
     //Test for a palindrome
     let returnObj = checkForPalindrome(userString);
 
     //Displaying the result to the user
     displayMessage(returnObj);
+    }
+    else {
+        alert("You must enter three or more characters!");
+        }
 }
 
 //Test if the string is a palindrome
@@ -120,7 +125,7 @@ function displayMessage(returnObj){
                     
                     <h5>1.) getValues()</h5>
                     <p>
-                        The Javascript code of this application begins with the getValues function. The very first step is to ensure that the results element is not visible. Making the results element invisible is done by adding the invisible class. Afterwards, the user's input is stored in a variable. This variable is checked to confirm that a value was entered. If the user has not entered a value before pressing the submit button, the user will get alerted to try again. 
+                        The Javascript code of this application begins with the getValues function. The very first step is to ensure that the results element is not visible. Making the results element invisible is done by adding the invisible class. Afterwards, the user's input is stored in a variable. This variable is checked to confirm that a value was entered. If the user has not entered a value before pressing the submit button, the user will get alerted to try again. I have also added an if-statement that prompts the user to enter three or more characters.
                     </p>
                     <br>
                     <h5>2.) checkForPalindrome()</h5>
